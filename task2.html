@@ -1,0 +1,52 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>task</title>
+		</head>
+		<body>
+			<script>
+				//_______________task1___________________
+				var a = 8;
+				var b = 30;
+				if ( a > b ){
+					console.log ( a )
+				}
+				else {
+					console.log ( b )
+				}
+				//_____________task2___________________
+				var c = 15;
+				if( ( a < b ) && ( b < c )) {
+					console.log ( a,b,c )
+				}
+				else if ( (a > b) && ( c > a ) ) {
+					console.log ( b,a,c )
+				}
+				else if ( (c < a) && (a < b) ){
+					console.log ( c,a,b)
+				}
+				else if ((b < c) && (c < a)){
+					console.log ( b,c,a)
+				}
+				else if((a < c) && (c < b)){
+					console.log ( a,c,b)
+				}
+				else {
+					console.log ( c,b,a)
+				}
+				//____________________task3________________________
+				var d = prompt('Store variables d = '); 
+				var e = prompt('Store variables e = ');
+				var f = prompt('Store variables f = ');
+				if ( (d > e) && ( d > f) ) {
+					alert ( 'largest of numbers is ' + d)
+				}
+				else if( (e > d) && ( e > f) ){
+					alert ( 'largest of numbers is ' + e)
+				}
+				else{
+					alert ( 'largest of numbers is ' + f)
+				}
+			</script>
+		</body>
+	</html>
