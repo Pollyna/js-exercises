@@ -1,0 +1,24 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>_FOR_function_</title>
+		</head>
+		<body>
+			<script>
+				var a = +prompt('imput the lower limit of the interval', -5);
+				var b = +prompt('imput the upper limit of the interval', 5);
+				var step = +prompt('imput step', 0.2);
+				var z = ( Math.abs(b) + Math.abs(a))/5;
+				while(step >= z){
+					if(step >= z ) {
+					step = +prompt('imput step <= 1/5of the interval', 0.2);
+					}
+				}
+				for(x = a; x <= b; x += step){
+					var y = Math.pow(x,2) + (2*x) - 7;
+					x += step ;
+					console.log(x.toFixed(1), y.toFixed(1));
+				}
+			</script>
+		</body>
+	</html>
