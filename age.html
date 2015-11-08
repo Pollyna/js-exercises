@@ -1,0 +1,30 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>_AGE_</title>
+		</head>
+		<body>
+			<script>
+				var age = +prompt('imput your age', 23);
+				while ( age <= 5 || age >= 100){
+					age = +prompt('imput your age', 23);
+				}
+				do{
+					if(age <= 25){
+						alert('you are young!');
+						break;
+					}
+					else if(age <= 65){
+						alert('you are adult!');
+						break;
+					}
+					else{
+						alert('you are wise');
+						break;
+					}
+				}
+				while(age <= 100);
+				
+			</script>
+		</body>
+	</html>
