@@ -1,0 +1,52 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>task</title>
+		</head>
+		<body>
+			<script>
+				//The Fortune Teller
+				var children = prompt('Store number of children ', 2);
+				var partner = prompt('Store partners name ', 'Name');
+				var locat = prompt('Store geographic location ', 'Ukraine');
+				var job = prompt ("store your job", 'FrontEnd developer');
+				alert ('You will be a ' + job + ' in ' + locat + ', and married to  ' + partner + ' with ' + children + ' children');
+				//The Age Calculator
+				var year = prompt('Store the current year ', 2015);
+				var birht_year = prompt('Store your birth year  ', 1990);
+				var age = year - birht_year;
+				var agevar = age-1;
+				alert ('You are either '+ age + ' or ' + agevar);
+				//The Lifetime Supply Calculator
+				var age = prompt('Store your current age ', 20);
+				var maxage = prompt('Store a maximum age ', 100);
+				var dayeat = prompt('Store an estimated amount per day', 0.5);
+				var x = ( maxage - age ) * dayeat * 365;
+				alert ('You will need ' + x + ' to last you until the ripe old age of ' + maxage );
+				//The Geometrizer
+				var r = 5;
+				var Q = 20;
+				var a = 10; 
+				var PI = 3.141592;
+				var CF = 2 * PI * r;
+				var CA = PI * ( r * r );
+				var LCA = Q * ( PI / 180 ) * r;
+				var ACS = (Q / 360) * PI * ( r * r );
+				var EC = ( r * r );
+				console.log ('Length of a Circular Arc ' + LCA);
+				console.log ("The circumference is " + CF );
+				console.log ('The area is ' + CA);
+				console.log ('Area of Circle Sector ' + ACS);
+				console.log ('Equation of Circle: (polar coordinates) ' + EC);
+				
+				//The Temperature Converter
+				var C = prompt('Temperature in C ');
+				var F = (C * 1.8 ) + 32;
+				alert ("F = "+ F );
+				var F = prompt('Temperature F ');
+				var C = (F - 32) / 1.8; 
+				alert ("C = "+ C );
+
+			</script>
+		</body>
+	</html>
